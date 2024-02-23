@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="10 18 250 50" fill="#ffffff">
+  <style>
+    .text { font-family: 'Inter', sans-serif; font-size: 24px; fill: #ffffff; }
+    .note { fill: none; stroke: #ffffff; stroke-width: 2; }
+  </style>
+  <rect width="100%" height="100%" fill="transparent"/>
+  <text class="text" x="10" y="95%" dominant-baseline="middle">Personal</text>
+  <text class="text" x="155" y="95%" dominant-baseline="middle">Notes</text>
+  <path class="note" d="M110 30 L150 30 L150 60 L110 60 Z" />
+  <line class="note" x1="130" y1="35" x2="115" y2="35" />
+  <line class="note" x1="120" y1="40" x2="140" y2="40" />
+  <line class="note" x1="115" y1="45" x2="130" y2="45" />
+  <line class="note" x1="120" y1="50" x2="140" y2="50" />
+  <line class="note" x1="115" y1="55" x2="130" y2="55" />
+  <line class="note" x1="120" y1="60" x2="140" y2="60" />
+</svg>
