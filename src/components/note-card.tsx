@@ -6,9 +6,10 @@ import { INote } from '../interfaces/note';
 
 interface INoteCardProps {
     note: INote;
+    onNoteDeleted: (id: string) => void;
 }
 
-export function NoteCard({ note }: INoteCardProps) {
+export function NoteCard({ note, onNoteDeleted }: INoteCardProps) {
     return (
         <Dialog.Root>
             {/* Card */}
@@ -41,9 +42,10 @@ export function NoteCard({ note }: INoteCardProps) {
 
                     <button
                         type='button'
+                        onClick={() => onNoteDeleted(note.id)}
                         className='w-full outline-none py-4 bg-slate-800 text-slate-300 text-center text-sm font-medium group'
                     >
-                            Would you like to <span className='text-red-400 group-hover:underline'>delete this note</span>?
+                        Would you like to <span className='text-red-400 group-hover:underline'>delete this note</span>?
                     </button>
                 </Dialog.Content>
             </Dialog.Portal>

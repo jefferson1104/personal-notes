@@ -42,6 +42,16 @@ export function App() {
     localStorage.setItem('notes', JSON.stringify(notesArray));
   };
 
+  function onNoteDeleted(id: string) {
+    const notesArray = notes.filter(note => {
+      return note.id !== id;
+    });
+
+    setNotes(notesArray);
+
+    localStorage.setItem('notes', JSON.stringify(notesArray));
+  };
+
   return (
     <div className='mx-auto max-w-6xl my-12 space-y-6 px-5'>
       <img src={logo} alt='personal notes logo' width={200} height={200} />
@@ -61,7 +71,7 @@ export function App() {
         <NewNoteCard onNoteCreated={onNoteCreated} />
 
         {filteredNotes.map(note => (
-          <NoteCard key={note.id} note={note} />
+          <NoteCard key={note.id} note={note} onNoteDeleted={onNoteDeleted} />
         ))}
       </div>
     </div>
