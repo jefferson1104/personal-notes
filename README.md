@@ -1,6 +1,7 @@
 <div align="center" style="margin-bottom: 20px;">
   <div>
     <h1>PERSONAL NOTES</h1>
+    <img src="./public/screenshots/banner.png" alt="screenshots" />
   </div>
 
   <div align="center">
